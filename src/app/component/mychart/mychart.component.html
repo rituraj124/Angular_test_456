@@ -1,0 +1,37 @@
+<div class="container">
+    <nav class="navbar">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <span class="navbar-title">Dashboard</span>
+    </nav>
+
+    <div class="wrapper">
+        <div id="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <button (click)="changeScale()" class="btn">Change Scale</button>
+
+            <div class="chart-row">
+                <div class="chart-column">
+                    <h2>Bar Chart</h2>
+                    <div class="chart-container">
+                        <canvas id="barchart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-column">
+                    <h2>Line Chart</h2>
+                    <div class="chart-container">
+                        <canvas id="linechart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
